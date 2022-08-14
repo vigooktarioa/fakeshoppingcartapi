@@ -32,8 +32,9 @@ export default class ListCategories extends Component{
             <h4><strong>Daftar Kategori</strong></h4>
             <hr/>
             <ListGroup>
+                
                 {categories && categories.map((category) => (
-                    <ListGroup.Item>{category}</ListGroup.Item>
+                    <h5><ListGroup.Item key={category}>{category}</ListGroup.Item></h5>
                 ))}
       </ListGroup>
         </Col>
